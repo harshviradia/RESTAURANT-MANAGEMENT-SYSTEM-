@@ -1,0 +1,2 @@
+# RESTAURANT-MANAGEMENT-SYSTEM-
+Here I've uploaded my java software project. This project is RESTAURANT MANAGEMENT SYSTEM. In this project I've used java swing functionality. This is a web application. In this application I've created a user registration, user log in, restaurant menu card and also there is online and offline payment method. Here also I've connected this all thing with MYSQL database to store data.
