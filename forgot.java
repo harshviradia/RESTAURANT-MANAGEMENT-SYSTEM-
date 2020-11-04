@@ -55,8 +55,8 @@ Connection con=null;
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Trebuchet MS", 1, 36)); // NOI18N
-        jLabel2.setText("Redison Restaurant");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, -1, -1));
+        jLabel2.setText("DIL HAI HINDUSTANI RESTUARANT");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 50, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -66,24 +66,22 @@ Connection con=null;
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
-        jButton1.setText("Change Password");
+        jButton1.setText("CHANGE PASSWORD");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 290, -1, -1));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 290, -1, -1));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("D:\\Restaurant (1)\\Restaurant System project\\src\\restaurant\\y1ostvqnr4711.jpg")); // NOI18N
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 460));
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Circuit Lab\\OneDrive\\Desktop\\Restaurant\\Restaurant\\src\\restaurant\\y1ostvqnr4711.jpg")); // NOI18N
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 460));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -91,6 +89,7 @@ Connection con=null;
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -102,7 +101,7 @@ String query = "SELECT * FROM `register` WHERE `m_number` =?";
     try {
         Class.forName("java.sql.DriverManager");
         @SuppressWarnings("LocalVariableHidesMemberVariable")
-        Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/restaurant","root","H@rsh");
+        Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/restaurant","root","2511");
         
         @SuppressWarnings("LocalVariableHidesMemberVariable")
          PreparedStatement ps;

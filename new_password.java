@@ -61,13 +61,13 @@ public class new_password extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(255, 255, 0));
         jButton1.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
-        jButton1.setText("Login");
+        jButton1.setText("LOGIN");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 310, -1, -1));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, -1, -1));
         jPanel1.add(number, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 125, 108, -1));
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -77,14 +77,16 @@ public class new_password extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Trebuchet MS", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("REDISON RESTAURANT");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, -1, -1));
+        jLabel5.setText("DIL HAI HINDUSTANI RESTAURANT");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, -1));
         jPanel1.add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 230, 110, -1));
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Confirm Password:");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(143, 230, -1, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Circuit Lab\\OneDrive\\Desktop\\Restaurant\\Restaurant\\src\\restaurant\\child-holding-handful-candy_120602-168.jpg")); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 420));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -101,6 +103,7 @@ public class new_password extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     @SuppressWarnings("CallToPrintStackTrace")
@@ -114,7 +117,7 @@ public class new_password extends javax.swing.JFrame {
            
     String jdbcUrl = "jdbc:mysql://localhost:3306/restaurant";
     String username = "root";
-    String password = "H@rsh";
+    String password = "2511";
     String sql = "update register set password=? where m_number=?";
     String s="update register set c_password=? where m_number=?";
  boolean valid = true;
